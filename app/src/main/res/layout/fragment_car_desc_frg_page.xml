@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bkg"
+    tools:context=".car_desc_frg_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_car_logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_car_logo">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lt_animationn"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                app:lottie_autoPlay="true"
+                app:lottie_speed="1.0"
+                app:lottie_loop="true"
+                app:lottie_fileName="loading_animation.json"
+                android:visibility="visible"
+                android:layout_height="100dp"/>
+            <ImageView
+                android:id="@+id/img_bkg_1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pgn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/txt_car_launch_yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/adamina"
+                android:layout_marginBottom="45dp"
+                android:text="2023"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_brandnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="17dp"
+                android:gravity="center"
+                android:text="Pagani"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/txt_modelnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:text="Pagani Utopia"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/white"
+                android:textSize="26dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/adamina"
+                android:layout_marginBottom="5dp"
+                android:text="PRICE : "
+                android:textColor="#FFC003"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5,000,000"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/adamina"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="80dp"
+                android:textColor="#FFC003"
+                android:textSize="17dp"
+                android:textStyle="italic"/>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crdv" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="Engine : "
+            android:textColor="@color/black"
+            android:textSize="15.26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_eng_aspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="8.0L Quad Turbocharged W16"
+            android:textColor="@color/white"
+            android:textSize="15.26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.305"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="Number of Units : "
+            android:textColor="@color/black"
+            android:textSize="15.26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_no_of_units_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="Over 5k"
+            android:textColor="@color/white"
+            android:textSize="15.26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_eng_aspect"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="0-60 Mph Time : "
+            android:textColor="@color/black"
+            android:textSize="15.26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_0_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="3.5 Seconds"
+            android:textColor="@color/white"
+            android:textSize="15.26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.342"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/txt_no_of_units_made"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/speed_animation"
+            android:layout_width="110dp"
+            android:layout_height="105dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="speed.json"
+            app:lottie_loop="false"
+            app:lottie_speed="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textColor="@color/black"
+            android:textSize="15.85sp"
+            android:fontFamily="@font/amiri_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/speed_animation"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toStartOf="@+id/speed_animation"
+            app:layout_constraintTop_toTopOf="@+id/speed_animation"
+            app:layout_constraintVertical_bias="0.629" />
+
+
+        <TextView
+            android:id="@+id/txt_topspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="480 KM/H"
+            android:textColor="@color/white"
+            android:textSize="15.85sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/speed_animation"
+            app:layout_constraintHorizontal_bias="0.421"
+            app:layout_constraintStart_toStartOf="@+id/speed_animation"
+            app:layout_constraintTop_toTopOf="@+id/speed_animation"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/hp_icon"
+            android:layout_width="99dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/hp_icon"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horsepower"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/hp_icon"
+            app:layout_constraintHorizontal_bias="0.42"
+            android:fontFamily="@font/amiri_bold"
+            app:layout_constraintStart_toStartOf="@+id/hp_icon"
+            app:layout_constraintTop_toTopOf="@+id/hp_icon"
+            app:layout_constraintVertical_bias="0.629" />
+
+
+
+        <TextView
+            android:id="@+id/txt_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri_bold"
+            android:text="100HP"
+            android:textColor="@color/white"
+            android:textSize="15.85sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/hp_icon"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="@+id/hp_icon"
+            app:layout_constraintTop_toTopOf="@+id/hp_icon"
+            app:layout_constraintVertical_bias="0.806" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img_1"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/tork"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/torque_icon"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Torque"
+            android:textColor="@color/black"
+            android:textSize="15.85sp"
+            android:fontFamily="@font/amiri_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/tork"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tork"
+            app:layout_constraintTop_toTopOf="@+id/tork"
+            app:layout_constraintVertical_bias="0.576" />
+
+        <TextView
+            android:id="@+id/txt_torque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="480NM"
+            android:textColor="@color/white"
+            android:textSize="15.85sp"
+            android:fontFamily="@font/amiri_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/tork"
+            app:layout_constraintHorizontal_bias="0.365"
+            app:layout_constraintStart_toStartOf="@+id/tork"
+            app:layout_constraintTop_toTopOf="@+id/tork"
+            app:layout_constraintVertical_bias="0.782" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/DRimg"-->
+<!--            android:layout_width="139dp"-->
+<!--            android:layout_height="261dp"-->
+<!--            android:layout_marginStart="272dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/pgn"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView6" />-->
+
+
+        <ImageView
+            android:id="@+id/DRimg"
+            android:layout_width="0dp"
+            android:layout_height="261.4dp"
+            android:layout_marginStart="272dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pgn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:layout_constraintWidth_percent="0.35" />
+
+        <TextView
+            android:id="@+id/Drtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Driving"
+            android:textColor="@color/white"
+            android:textSize="15.26dp"
+            app:layout_constraintBottom_toBottomOf="@+id/DRimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="@+id/DRimg"
+            app:layout_constraintTop_toTopOf="@+id/DRimg"
+            app:layout_constraintVertical_bias="0.917" />
+
+        <TextView
+            android:id="@+id/DRtxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Images"
+            android:textColor="#FFC003"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/DRimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="@+id/DRimg"
+            app:layout_constraintTop_toBottomOf="@+id/Drtxt"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/Eximg"
+            android:layout_width="0dp"
+            android:layout_height="130.5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pgn"
+            app:layout_constraintWidth_percent="0.65"
+            app:layout_constraintEnd_toStartOf="@+id/DRimg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+        <TextView
+            android:id="@+id/Extxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Exterior"
+            android:textColor="@color/white"
+            android:textSize="15.26dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Eximg"
+            app:layout_constraintEnd_toEndOf="@+id/Eximg"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="@+id/Eximg"
+            app:layout_constraintTop_toTopOf="@+id/Eximg"
+            app:layout_constraintVertical_bias="0.831" />
+
+        <TextView
+            android:id="@+id/EXtxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Images"
+            android:textColor="#FFC003"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Eximg"
+            app:layout_constraintEnd_toEndOf="@+id/Eximg"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Extxt"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/INimg"
+            android:layout_width="0dp"
+            android:layout_height="130.5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintWidth_percent="0.65"
+            app:layout_constraintEnd_toStartOf="@+id/DRimg"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/pgn"
+            app:layout_constraintTop_toBottomOf="@+id/Eximg"/>
+
+        <TextView
+            android:id="@+id/INtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Intirior"
+            android:textColor="@color/white"
+            android:textSize="15.26dp"
+            app:layout_constraintBottom_toBottomOf="@+id/INimg"
+            app:layout_constraintEnd_toEndOf="@+id/INimg"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="@+id/Eximg"
+            app:layout_constraintTop_toBottomOf="@+id/Eximg"
+            app:layout_constraintVertical_bias="0.831" />
+
+        <TextView
+            android:id="@+id/INtxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Images"
+            android:textColor="#FFC003"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/INimg"
+            app:layout_constraintEnd_toEndOf="@+id/Eximg"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/INtxt"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/img_gal_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_play_circle_outline_24"
+            app:layout_constraintBottom_toBottomOf="@+id/INimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#310C0C40"
+            android:elevation="70dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/INimg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:layout_marginTop="108dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Overview"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Pagani is the modern supercar maker that blurs the line between automobile and art more than any other. That remains true with the Italian company’s new model, the Utopia, which you are seeing here for the first time. This is a car that would look as natural sitting on a plinth as in a garage.\n
+            \n
+            While many of the design themes are familiar from the previous Huayra, Pagani promises that the Utopia's structure is entirely new. It was built around three targets set by company founder Horacio Pagani himself: simplicity, lightness, and the pleasure of driving.Company founder Horacio Pagani instructed his team of engineers turned artists to meet three targets for the company’s newest supercar, the Utopia: simplicity, lightness, and the pleasure of driving.The Utopia is unquestionably a masterpiece and guaranteed to be incredibly rare: only 99 Utopia coupes will roll out of the Pagani factory in San Cesario sul Panaro in the province of Modena, Italy."
+                android:textColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#310C0C40"
+            android:elevation="70dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mmm">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="108dp"
+                android:gravity="center"
+                android:fontFamily="@font/adamina"
+                android:text="Specification"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"/>
+
+            <TextView
+                android:id="@+id/specification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Utopia's forged aluminium double wishbone suspension was based on experience gathered throughout the track-only Huayra R's development. The M158 twin-turbocharged V12 engine, designed and built by Mercedes-AMG, will now develop 864 PS (635 kW; 852 hp) at 6000 rpm and 1,100 N⋅m (811 lb⋅ft) of torque available between 2800 and 5900 rpm. The engine weighs 262 kg dry. Pagani partnered with Xtrac to develop a 7-speed gearbox that will be mounted transversally and is available as pure manual or an automated manual and coupled with an electro-mechanical differential by a triple plate clutch."
+                android:textColor="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+
+
+
+

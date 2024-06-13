@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_bkg"
+    android:layout_height="match_parent"
+    tools:context=".Home_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inria_serif_light"
+            android:text="Discover"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/italianno"
+            android:text="Top Automotive Manufacturers"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recyclerviewforbrandstory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textViewfortopfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/italianno"
+            android:text="Categories"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recyclerviewforbrandstory" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recyclerviewforcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewfortopfast" />
+
+
+        <TextView
+            android:id="@+id/textViewfortopfast2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/italianno"
+            android:text="What's New?!"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recyclerviewforcat" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpagerforfastest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewfortopfast2" />
+
+        <TextView
+            android:id="@+id/Qtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inria_serif_light"
+            android:text="What This App Is All About?"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpagerforfastest2" />
+
+        <TextView
+            android:id="@+id/textViewfortopfast3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Welcome to the Ultimate Car Enthusiast's Dream App \n\n
+As car enthusiasts, we know that our passion for automobiles goes beyond mere transportation. It's about the roar of the engine, the sleek lines of the body, the history, the innovation, and the pure, unadulterated thrill of the drive. Our new app is designed to bring together all of these elements, creating a comprehensive platform for car lovers of all kinds to indulge in their automotive dreams.
+\n\n
+Dive into the World of Cars \n\n
+Imagine an app where you can immerse yourself in the world of cars, exploring everything from the latest supercars to classic models that defined an era. Our app is a treasure trove of information and inspiration, featuring detailed profiles of hundreds of cars from renowned brands like Bugatti and Porsche. Whether you're fascinated by the cutting-edge technology of the Bugatti Chiron or the timeless elegance of the Porsche 911, our app has something to captivate your interest.
+\n\n
+Comprehensive Car Database.\n\n
+At the heart of our app is an extensive database of car models, complete with detailed specifications. You'll find everything you need to know about your favorite cars, including engine details, horsepower, torque, top speed, 0-60 times, production years, and even the number of units produced. Each car profile is meticulously curated to provide a wealth of information, allowing you to appreciate the engineering marvels that make these vehicles so extraordinary.
+\n\n
+Stay Updated with the Latest News\n\n
+For enthusiasts who crave the latest news, our app provides up-to-the-minute updates on new releases, industry trends, and automotive events. Stay informed about upcoming car shows, read expert reviews of the latest models, and get insider information on future developments in the automotive world. Our news section is your gateway to staying connected with the dynamic and ever-evolving world of cars."
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Qtext"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

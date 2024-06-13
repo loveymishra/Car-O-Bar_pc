@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/adamina</item>
+        <item>@font/amiri</item>
+        <item>@font/amiri_bold</item>
+        <item>@font/inria_serif_bold_italic</item>
+        <item>@font/inria_serif_light</item>
+        <item>@font/italianno</item>
+    </array>
+</resources>

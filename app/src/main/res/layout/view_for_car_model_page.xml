@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="70dp"
+    android:background="#1e392d"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lt_animation_for_car_model_page"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            app:lottie_autoPlay="true"
+            app:lottie_speed="1.0"
+            app:lottie_loop="true"
+            app:lottie_fileName="loading_animation.json"
+            android:visibility="visible"
+            android:layout_height="300dp"/>
+
+
+        <ImageView
+            android:id="@+id/imgv_fr_cr_mdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+        <TextView
+            android:id="@+id/txtv_fr_cr_mdl_nm"
+            android:layout_width="wrap_content"
+            android:text="nfjfjjsd aklodn dnjifdm"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_height="match_parent"/>
+
+</androidx.cardview.widget.CardView>
